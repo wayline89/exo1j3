@@ -84,3 +84,11 @@ if (index !== -1) {
   console.log(`Le nombre ${searchNumber} n'est pas présent dans le tableau.`);
 }
 
+// Ecrire un programme qui demande à l'utilisateur d'introduire 10 nombres
+// entiers. Ces nombres sont enregistrés dans un tableau.
+// Le programme affiche ensuite une des phrases suivantes :
+// -le tableau est croissant
+// -le tableau est décroissant
+// -le tableau est constant
+// -le tableau est quelconque
+
