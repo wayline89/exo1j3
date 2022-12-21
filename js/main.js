@@ -3,7 +3,6 @@
 for (let num = 1; num <= 10; num++) {
     console.log(num);
   }
-  
 
 // Écrivez une boucle while qui affiche les nombres de 10 à 1 dans la console.
 
@@ -13,7 +12,6 @@ while (U >= 1) {
   U--;
 }
 
-
 // Écrivez une boucle do...while qui affiche les nombres pairs de 2 à 20 dans la console.
 
 let i = 2;
@@ -21,8 +19,6 @@ do {
   console.log(i);
   i += 2;
 } while (i <= 20);
-
-
 
 // Écrivez une boucle for...of qui affiche chaque élément d'un tableau de mots (par exemple, ["un", "deux", "trois"]).
 
@@ -55,7 +51,6 @@ for (let cinq = 1; cinq <= 10; cinq++) {
     }
     console.log(cinq);
   }
-  
 
 // Écrivez une boucle for qui affiche les nombres de 1 à 10 en utilisant l'instruction continue pour passer à l'itération suivante lorsque le nombre est pair.
 
@@ -65,4 +60,27 @@ for (let i = 1; i <= 10; i++) {
     }
     console.log(i);
   }
-  
+
+// Ecrire un programme qui demande à l'ulisateur d'introduire 10 nombres
+// entiers. Ces nombres sont enregistrés dans un tableau.
+// Le programme demande ensuite à l'ulisateur quel nombre il cherche. Si
+// ce nombre est présent dans le tableau, le programme affiche l'indice de
+// ce nombre dans le tableau.
+
+
+let numbers = [];
+for (let i = 1; i <= 10; i++) {
+  let number = Number(prompt(`Saisissez le nombre entier n°${i} :`));
+  numbers.push(number);
+  console.log(number);
+}
+let searchNumber = Number(prompt("Quel nombre cherchez-vous ?"));
+let index = numbers.indexOf(searchNumber);
+if (index !== -1) {
+  console.log(
+    `Le nombre ${searchNumber} se trouve à l'indice ${index} du tableau.`
+  );
+} else {
+  console.log(`Le nombre ${searchNumber} n'est pas présent dans le tableau.`);
+}
+
